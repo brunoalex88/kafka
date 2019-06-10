@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "MessageAvro",
+  "namespace": "com.obruno.avro",
+  "fields": [
+    {
+      "name": "id",
+      "type": "long"
+    },
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ]
+}
