@@ -36,9 +36,6 @@ dependencies {
 	}
 
 	compile "org.apache.avro:avro:1.8.1"
-	compile ('io.confluent:kafka-schema-registry:4.1.0') {
-		exclude group: "org.slf4j", module: "slf4j-log4j12"
-	}
 
 }
 
