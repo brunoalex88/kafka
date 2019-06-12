@@ -1,5 +1,6 @@
 package com.obruno.controller;
 
+import com.obruno.avro.MessageAvro;
 import com.obruno.model.Message;
 import com.obruno.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,8 @@ public class MessageController {
     }
 
     @GetMapping
-    public Message consume() {
-        return messageService.consume();
+    public MessageAvro consume() {
+        return messageService.consume(new MessageAvro());
     }
 
 }
